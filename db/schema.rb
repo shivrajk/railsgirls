@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150131103838) do
+ActiveRecord::Schema.define(version: 20150131113635) do
 
   create_table "cabs", force: true do |t|
     t.string   "cab_type"
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20150131103838) do
     t.float    "experience"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "cab_id"
   end
 
 end
