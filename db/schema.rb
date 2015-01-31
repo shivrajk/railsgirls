@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150131083817) do
+ActiveRecord::Schema.define(version: 20150131103838) do
 
   create_table "cabs", force: true do |t|
     t.string   "cab_type"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20150131083817) do
     t.boolean  "insured"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "driver_id"
   end
 
   create_table "drivers", force: true do |t|
